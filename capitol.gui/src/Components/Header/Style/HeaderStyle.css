@@ -1,0 +1,39 @@
+.JumbortonRow {
+    justify-content: center;
+    width: 100%;
+}
+
+.Icon {
+    font-size: 3rem !important;
+}
+
+.CapitolHeader {
+    font-family: 'Shippori';
+    font-size: 60px;
+    user-select: none;
+    color: rgb(179, 230, 218);
+    position: absolute;
+    bottom: 0px;
+}
+
+.JumbortonMain {
+    padding: 10px !important;
+    margin: 0px !important;
+    border-radius: 0px !important;
+    background: linear-gradient(135deg, rgb(100, 200, 218), rgb(40, 104, 156), rgb(0, 0, 0)) !important;
+    box-shadow: 0 2vh 40px rgba(21, 96, 182, 0.671);
+    height: 20vh;
+}
+.JumbortonMainCol{
+    height: 100%;
+}
+
+.CapitolCredit {
+    font-family: 'Questrial';
+    color: rgb(191, 231, 222);
+    font-size: 20px;
+    user-select: none;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
