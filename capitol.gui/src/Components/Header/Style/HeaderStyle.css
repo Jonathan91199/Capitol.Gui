@@ -37,3 +37,12 @@
     right: 0px;
     bottom: 0px;
 }
+#CapitolSideNavTrigger{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    font-size: 30px;
+    transition: 0.3s;
+    user-select: none;
+    cursor: pointer;
+}

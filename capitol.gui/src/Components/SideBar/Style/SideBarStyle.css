@@ -1,0 +1,9 @@
+.SideBarMainDiv{
+    background-color: #408eb4;
+    height: 75vh;
+    width: 20vh;
+    position: absolute;
+    bottom: 0;
+    border-top-right-radius: 20px;
+    transition: 0.3s;
+}
