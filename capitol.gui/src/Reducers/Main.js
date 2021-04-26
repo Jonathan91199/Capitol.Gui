@@ -1,13 +1,13 @@
 let initialState = {
-    test: "abc"
+    sideBarState: false
 }
 
 export default function mainReducer(state = initialState, action) {
     switch (action.type) {
-        case 'ADD': {
+        case 'SET_SIDEBAR_STATE': {
             return {
                 ...state,
-                test: action.value
+                sideBarState: action.value
             }
         }
 
