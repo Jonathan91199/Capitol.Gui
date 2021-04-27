@@ -4,3 +4,11 @@ export function setSideBarState(value) {
        value: value.value,
     }
  }
+
+ export function setAllSystems(value){
+   return {
+      type: 'SET_ALL_SYSTEMS',
+      value: value.value,
+   }
+ }
+
