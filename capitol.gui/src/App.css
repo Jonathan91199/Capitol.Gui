@@ -46,4 +46,8 @@
   font-family: 'Questrial';
   src: local('Questrial'), url(./Fonts/Questrial/Questrial-Regular.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'Mandali';
+  src: local('Mandali'), url(./Fonts/Mandali/Mandali-Regular.ttf) format('truetype');
+}
 

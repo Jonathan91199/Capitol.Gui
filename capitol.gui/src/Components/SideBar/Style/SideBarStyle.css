@@ -1,4 +1,4 @@
-.SideBarMainDiv{
+.SideBarMainDiv {
     background-color: #408eb4;
     height: 75vh;
     width: 0vw;
@@ -6,4 +6,63 @@
     bottom: 0;
     border-top-right-radius: 20px;
     transition: 0.3s;
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+
+.SideBarHeader {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    user-select: none;
+    font-family: 'Mandali';
+    font-size: 30px;
+    color: rgb(224, 244, 255);
+    border-bottom: 3px solid rgb(224, 244, 255);
+}
+
+.SideBarOptions {
+    margin-top: 50px;
+}
+
+.SideBarOption {
+    color: rgb(224, 244, 255);
+    border-bottom: 1px solid rgb(224, 244, 255);
+    border-top: 1px solid rgb(224, 244, 255);
+    padding: 5px;
+    margin-top: 15px;
+    user-select: none;
+    font-family: 'Mandali';
+}
+
+.SideBarOptions :hover {
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.342);
+}
+.SideBarOptions :active {
+    /* transition: 0.1s; */
+    cursor: pointer;
+    background-color: rgba(204, 192, 192, 0.342);
+}
+.SideBarSettingsDiv{
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+}
+.SideBarSettingsInnerDiv{
+    display: flex;
+    justify-content: center;
+}
+
+.SideBarSettingsInnerDiv .bi-gear-wide-connected{
+    font-size: 2.5vw;
+}
+.SideBarSettingsInnerDiv  :hover{
+    cursor: pointer;
+    transition: 0.3s;
+    color: rgb(224, 244, 255);
+}
+.SideBarSettingsInnerDiv  :active{
+    cursor: pointer;
+    color: rgba(231, 222, 222, 0.534);
 }
