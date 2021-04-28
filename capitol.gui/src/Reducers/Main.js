@@ -1,6 +1,7 @@
 let initialState = {
     sideBarState: false, 
-    allSystems : []
+    allSystems : [],
+    allSystemsHeaders : []
 }
 
 export default function mainReducer(state = initialState, action) {
@@ -15,6 +16,12 @@ export default function mainReducer(state = initialState, action) {
             return {
                 ...state,
                 allSystems: action.value
+            }
+        }
+        case 'SET_ALL_HEADERS': {
+            return {
+                ...state,
+                allSystemsHeaders: action.value
             }
         }
 
