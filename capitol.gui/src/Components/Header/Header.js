@@ -14,8 +14,8 @@ class Header extends Component {
     handleClick() {
 
         let styleState = this.props.sideBarState ?
-            { rotationAngle: "rotate(0deg)", sideBarWidth: "0px", mainWindowWidth :"100vw", mainWindowOffset : "0vw" } :
-            { rotationAngle: "rotate(90deg)", sideBarWidth: "15vw", mainWindowWidth :"85vw", mainWindowOffset : "15vw" }
+            { rotationAngle: "rotate(0deg)", sideBarWidth: "0px", mainWindowWidth :"99vw", mainWindowOffset : "0vw" } :
+            { rotationAngle: "rotate(90deg)", sideBarWidth: "14vw", mainWindowWidth :"84vw", mainWindowOffset : "15vw" }
     
         this.props.dispatch(setSideBarState({ value: !this.props.sideBarState }))
         document.getElementById('CapitolSideNavTrigger').style.transform = styleState.rotationAngle

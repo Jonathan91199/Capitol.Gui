@@ -1,6 +1,6 @@
 
 import Axios from 'axios'
-import {setAllSystems} from '../../../Actions/Main'
+import {setAllSystems} from '../../../../Actions/Main'
 import swal from 'sweetalert'
 
 

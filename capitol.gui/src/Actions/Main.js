@@ -11,11 +11,18 @@ export function setSideBarState(value) {
       value: value.value,
    }
  }
+ export function setAllSystemsMetaData(value){
+   return {
+      type: 'SET_ALL_METADATA',
+      value: value.value,
+   }
+ }
  export function setAllSystemHeaders(value){
    return {
       type: 'SET_ALL_HEADERS',
       value: value.value,
    }
  }
+ 
 
 

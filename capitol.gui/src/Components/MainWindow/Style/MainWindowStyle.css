@@ -1,7 +1,7 @@
 .MainWindowMainDiv{
-    width: 85vw;
+    width: 99vw;
     position: absolute;
-    left: 15vw;
+    left: 0;
     transition: 0.3s;
-    height: 80vh;
+    height: 79vh;
 }

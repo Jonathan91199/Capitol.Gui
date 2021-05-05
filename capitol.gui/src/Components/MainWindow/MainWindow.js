@@ -1,21 +1,31 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import './Style/MainWindowStyle.css'
-import pullAllSystems from './Dependencies/pullAllSystems'
-import pullSystemsHeaders from './Dependencies/pullSystemsHeaders'
+import './Style/RowCreatorStyle.css'
+import pullAllSystems from './Dependencies/DB/pullAllSystems'
+import pullSystemsHeaders from './Dependencies/DB/pullSystemsHeaders'
+import pullSystemMetaData from './Dependencies/DB/pullSystemMetaData'
+import rowCreator from './Dependencies/rowCreator'
 class MainWindow extends Component{
+    constructor(props){
+        super(props)
+        this.state = {
+            systems : <div></div>
+        }
+    }
     
     componentDidMount(){
         let that = this
         pullAllSystems(this ,(systems) => {
-            pullSystemsHeaders(this, systems, () => that.forceUpdate())
+            console.log(systems)
+            that.setState({systems : rowCreator(that, systems, 5)})
         })
     }
 
     render(){
-        console.log(this.props.allSystemsHeaders)
         return(
             <div id="MainWindowMainDiv" className="MainWindowMainDiv">
+                {this.state.systems}
             </div>
         )
     }
